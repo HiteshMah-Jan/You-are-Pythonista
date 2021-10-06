@@ -69,6 +69,13 @@ def nextUrl(detail, detail1):
     scores = pd.DataFrame({'value': value, 'num': num})
     return country, movie_type, scores
 
+$email_send_to_table = (new CTable())->setId('email_send_to');
+
+foreach ($options['sendto_emails'] as $i => $email) {
+	$email_send_to_table->addRow([
+		(new CTextBox('sendto_emails['.$i.']', $email))
+			->setAriaRequired()
+
 
 if __name__ == '__main__':
     url = "https://www.imdb.com/chart/top"
@@ -91,3 +98,8 @@ if __name__ == '__main__':
         movie_data['scores'][i] = list(this_score['value'])
         movie_data['nums'][i] = list(this_score['num'])
         print(i)
+bel="Email address"
+        type="email"
+        name="EMAIL"
+        id="action-form-email"
+        isRequired
